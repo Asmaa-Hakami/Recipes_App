@@ -47,6 +47,7 @@ class RecipeListScreen extends ConsumerWidget {
                                       ? const Center(
                                           child: CircularProgressIndicator())
                                       : GridView.builder(
+                                          shrinkWrap: true,
                                           physics: const ScrollPhysics(),
                                           gridDelegate:
                                               const SliverGridDelegateWithFixedCrossAxisCount(
@@ -55,9 +56,8 @@ class RecipeListScreen extends ConsumerWidget {
                                           itemCount: snapshot.data?.length,
                                           itemBuilder: (context, index) {
                                             return RecipeCard(
-                                                recipe: RecipeApi.recipesBox.get(
-                                                    index) //snapshot.data![index],
-                                                );
+                                                recipe: RecipeApi.recipesBox
+                                                    .get(index));
                                           });
                                 })
                             : GridView.builder(
@@ -71,8 +71,7 @@ class RecipeListScreen extends ConsumerWidget {
                                 itemBuilder: (context, index) {
                                   return RecipeCard(
                                       recipe: RecipeApi.recipesBox.get(index)
-                                          as HiveRecipe //snapshot.data![index],
-                                      );
+                                          as HiveRecipe);
                                 })
                         : ShowSearchResult(
                             recipes: searchResult(searchText,

@@ -15,7 +15,6 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
     return PreferredSize(
       preferredSize: preferredSize,
       child: AppBar(
-          //automaticallyImplyLeading: false,
           leading: BackButton(
             color: isFirst
                 ? Constants.mossGreen.shade50.withOpacity(0.05)

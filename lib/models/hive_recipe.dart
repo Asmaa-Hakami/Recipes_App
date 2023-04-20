@@ -22,16 +22,15 @@ class HiveRecipe extends HiveObject {
       this.image,
       this.rating,
       this.ingredients,
-      required instructions});
+      this.instructions});
 
   factory HiveRecipe.fromJson(Map<String, dynamic> json) {
     return HiveRecipe(
-      id: json["id"],
-      name: json['name'],
-      image: json['thumbnail_url'],
-      rating: json['user_ratings']?['score'] ?? 0,
-      ingredients: json["sections"],
-      instructions: json["instructions"],
-    );
+        id: json["id"],
+        name: json['name'],
+        image: json['thumbnail_url'],
+        rating: json['user_ratings']?['score'] ?? 0,
+        ingredients: json["sections"],
+        instructions: json["instructions"]);
   }
 }
