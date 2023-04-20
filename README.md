@@ -1,17 +1,19 @@
-# recipes_app
+# Recipes_App
 
-A new Flutter project.
+A Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a simple Recipes Application with riverpod and RapidAPI.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Screenshots of running application on ios simulator.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://user-images.githubusercontent.com/52636680/233487331-8cdde3c3-fbc0-40cb-a836-78dadb9f0f97.png" width="650" >
+
+
+<img src="https://user-images.githubusercontent.com/52636680/233487466-a9e7e510-3c34-499e-9f0b-0bd7af0d0f3d.png" width="450" >
+
+
+
 # Recipes_App
